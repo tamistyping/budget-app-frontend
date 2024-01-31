@@ -36,7 +36,7 @@ export const BudgetsProvider = ({children}) => {
     
 
     function getBudgetExpenses(budgetId){
-        return expenses.filter(expense => expense.budgetId._id === budgetId)
+        return expenses.filter(expense => expense.budgetId?._id === budgetId)
     }
 
     async function addBudget(newBudget){

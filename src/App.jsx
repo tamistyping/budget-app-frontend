@@ -19,14 +19,14 @@ function App() {
 
   useEffect(() => {
     getBudgets();
-    // eslinst-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
     <>
       <Container className="my-4">
         <Stack direction="horizontal" gap="2" className="mb-4">
-          <h1 className="me-auto">Budget App</h1>
+          <h1 className="me-auto">Budgets</h1>
           <Button variant="primary" onClick={() => setShowAddBudgetModal(true)}>
             Add Budget
           </Button>
